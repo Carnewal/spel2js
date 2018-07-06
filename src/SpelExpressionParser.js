@@ -526,7 +526,7 @@ export var SpelExpressionParser = function () {
                 raiseInternalException(beanRefToken.startPos, 'INVALID_BEAN_REFERENCE');
             }
 
-            var beanReference = new BeanReference(toPosToken(beanNameToken), beanName);
+            var beanReference = BeanReference.create(toPosToken(beanNameToken), beanName);
             push(beanReference);
             return true;
         }

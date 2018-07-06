@@ -932,7 +932,7 @@ var SpelExpressionParser = exports.SpelExpressionParser = function SpelExpressio
                 raiseInternalException(beanRefToken.startPos, 'INVALID_BEAN_REFERENCE');
             }
 
-            var beanReference = new _BeanReference.BeanReference(toPosToken(beanNameToken), beanName);
+            var beanReference = _BeanReference.BeanReference.create(toPosToken(beanNameToken), beanName);
             push(beanReference);
             return true;
         }
