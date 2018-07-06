@@ -36,24 +36,25 @@ function createNode(variableName, position) {
     var node = SpelNode.create('bean', position);
 
     node.getValue = function (state) {
-        console.log('getValue', state, variableName, position)
-        var context = state.activeContext.peek(),
-            locals = state.locals;
+        var locals = state.locals;
+        // console.log('getValue', state, variableName, position)
+        // var context = state.activeContext.peek(),
+        //     locals = state.locals;
 
-        if (!context) {
-            throw {
-                name: 'ContextDoesNotExistException',
-                message: 'Attempting to look up variable \''+ variableName +'\' for an undefined context.'
-            };
-        }
+        // if (!context) {
+        //     throw {
+        //         name: 'ContextDoesNotExistException',
+        //         message: 'Attempting to look up variable \''+ variableName +'\' for an undefined context.'
+        //     };
+        // }
 
-        //there are 2 keywords (root, this) that need to be dealt with
-        if (variableName === 'this') {
-            return context;
-        }
-        if (variableName === 'root') {
-            return state.rootContext;
-        }
+        // //there are 2 keywords (root, this) that need to be dealt with
+        // if (variableName === 'this') {
+        //     return context;
+        // }
+        // if (variableName === 'root') {
+        //     return state.rootContext;
+        // }
 
         return locals[variableName];
     };

@@ -65,7 +65,6 @@ import {Projection} from './ast/Projection';
 var OperatorInstanceof,
     OperatorMatches,
     OperatorBetween,
-    BeanReference,
     TypeReference,
     QualifiedIdentifier,
     Identifier,
