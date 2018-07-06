@@ -33,6 +33,7 @@ import {FunctionReference} from './ast/FunctionReference';
 import {MethodReference} from './ast/MethodReference';
 import {PropertyReference} from './ast/PropertyReference';
 import {VariableReference} from './ast/VariableReference';
+import {BeanReference} from './ast/BeanReference' 
 import {CompoundExpression} from './ast/CompoundExpression';
 import {Indexer} from './ast/Indexer';
 import {Assign} from './ast/Assign';

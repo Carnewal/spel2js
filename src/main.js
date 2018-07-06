@@ -21,6 +21,7 @@
 
 import {SpelExpressionEvaluator} from './SpelExpressionEvaluator';
 import {StandardContext} from './StandardContext';
+import {SpelExpressionParser} from './SpelExpressionParser';
 import {tokenize as Tokenizer} from './Tokenizer'
 
-export {SpelExpressionEvaluator, StandardContext, Tokenizer};
+export {SpelExpressionEvaluator, StandardContext, SpelExpressionParser, Tokenizer};
